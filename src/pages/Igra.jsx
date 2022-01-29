@@ -44,11 +44,14 @@ export default function Igra({ pokusaji, dodajPokusaj }) {
               disabled={ulog <= 0}
               onClick={() => {
                 const broj = Math.floor(37 * Math.random());
-                setDobitak(getBoja(broj) === boja ? ulog * 2 : ulog * -2);
+                const b = getBoja(broj)
+                const d = b === boja ? ulog * 2 : 0
+                setDobitak(d);
                 dodajPokusaj({
                   broj,
                   ulog,
-                  boja
+                  boja: b,
+                  dobitak: d
                 })
               }}
               className='btn btn-danger mt-3 form-control'>Igraj</button>
