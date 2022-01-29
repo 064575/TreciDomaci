@@ -16,7 +16,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/statistika' element={<></>} />
-        <Route path='/' element={<Igra pokusaji={pokusaji.slice(-10)} dodajPokusaj={dodajPokusaj} />} />
+        <Route path='/' element={<Igra pokusaji={pokusaji.slice(-12).reverse()} dodajPokusaj={dodajPokusaj} />} />
       </Routes>
     </BrowserRouter>
   );

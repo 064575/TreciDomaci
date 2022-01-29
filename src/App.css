@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+.roulette {
+  background-image: url("https://img.pixers.pics/pho_wat(s3:700/FO/21/30/90/48/700_FO21309048_412b162814b40137a59d6c11af657437.jpg,700,700,cms:2018/10/5bd1b6b8d04b8_220x50-watermark.png,over,480,650,jpg)/posters-illustration-of-detailed-casino-roulette-wheel.jpg.jpg");
+  background-size: contain;
+  height: 400px;
+}
+.green {
+  background-color: green;
+  color: white;
+}
+
+.red {
+  background-color: red;
+  color: white;
+}
+.black {
+  background-color: black;
+  color: white;
+}
